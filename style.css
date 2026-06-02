@@ -45,8 +45,18 @@ body {
         border-radius: 0.75rem;
     }
 
+    & h1, & p {
+        padding: 0.5rem;
+    }
+
     & h1 {
         color: #1f314f;
+        font-size: 1.3rem;
+    }
+
+    & p {
+        padding-top: 0;
+        font-size: 1rem;
     }
 }
 
@@ -54,4 +64,5 @@ body {
     text-align: center;
     grid-column: full-width;
     grid-row: full-height;
+    z-index: -1;
 }
