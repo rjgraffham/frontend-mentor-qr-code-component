@@ -34,10 +34,13 @@ body {
     grid-column: card;
     grid-row: card;
     padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
 
     & .qr-code {
         width: 100%;
         aspect-ratio: 1/1;
+        border-radius: 0.75rem;
     }
 }
 
