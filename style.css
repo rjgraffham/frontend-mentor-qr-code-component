@@ -10,6 +10,7 @@ html, body {
 
 body {
     background-color: #d5e1ef;
+    font-family: 'Outfit', sans-serif;
     display: grid;
     grid-template-columns: 
         [full-width-start]
