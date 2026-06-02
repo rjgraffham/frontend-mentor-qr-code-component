@@ -30,7 +30,8 @@ body {
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #fff;
+    color: #555;
     grid-column: card;
     grid-row: card;
     padding: 1rem;
@@ -41,6 +42,10 @@ body {
         width: 100%;
         aspect-ratio: 1/1;
         border-radius: 0.75rem;
+    }
+
+    & h1 {
+        color: #26354a;
     }
 }
 
