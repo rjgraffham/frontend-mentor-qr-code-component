@@ -1,5 +1,12 @@
 * { box-sizing: border-box; }
 
+:root {
+    /* color system */
+    --clr-slate-900: #1f314f;
+    --clr-slate-500: #68778d;
+    --clr-slate-300: #d5e1ef;
+}
+
 html, body {
     font-size: 16px;
     margin: 0;
@@ -9,7 +16,8 @@ html, body {
 }
 
 body {
-    background-color: #d5e1ef;
+    background-color: var(--clr-slate-300);
+    color: var(--clr-slate-900);
     font-family: 'Outfit', sans-serif;
     display: grid;
     grid-template-columns: 
@@ -32,7 +40,6 @@ body {
 
 .card {
     background-color: #fff;
-    color: #68778d;
     grid-column: card;
     grid-row: card;
     padding: 1rem;
@@ -54,7 +61,6 @@ body {
     }
 
     & h1 {
-        color: #1f314f;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
         font-size: 1.375rem;
@@ -62,6 +68,7 @@ body {
     }
 
     & p {
+        color: var(--clr-slate-500);
         padding-top: 0;
         font-size: 0.9375rem;
         line-height: 1.4;
@@ -73,4 +80,14 @@ body {
     width: 100%;
     text-align: center;
     bottom: 0.5rem;
+
+    & a {
+        color: var(--clr-slate-500);
+
+        transition: 0.2s color ease-in-out;
+
+        &:hover, &:active {
+            color: rgba(from var(--clr-slate-500) r g b / 0.75);
+        }
+    }
 }
