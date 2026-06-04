@@ -79,10 +79,10 @@ body {
 }
 
 .attribution {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  bottom: 0.5rem;
+  grid-row: full-height;
+  grid-column: full-width;
+  place-self: end center;
+  padding-bottom: 0.5rem;
 
   & a {
     color: var(--clr-slate-500);
