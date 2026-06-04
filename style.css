@@ -23,28 +23,13 @@ body {
   color: var(--clr-slate-900);
   font-family: "Outfit", sans-serif;
   display: grid;
-  grid-template-columns:
-    [full-width-start]
-    auto
-    [card-start]
-    20rem
-    [card-end]
-    auto
-    [full-width-end];
-  grid-template-rows:
-    [full-height-start]
-    minmax(2.5rem, 1fr)
-    [card-start]
-    auto
-    [card-end]
-    minmax(2.5rem, 1fr)
-    [full-height-end];
 }
 
 .card {
   background-color: #fff;
-  grid-column: card;
-  grid-row: card;
+  width: 20rem;
+  grid-area: 1 / 1;
+  place-self: center;
   padding: 1rem;
   padding-bottom: 2.5rem;
   border-radius: 1.25rem;
@@ -79,8 +64,7 @@ body {
 }
 
 .attribution {
-  grid-row: full-height;
-  grid-column: full-width;
+  grid-area: 1 / 1;
   place-self: end center;
   padding-bottom: 0.5rem;
 
